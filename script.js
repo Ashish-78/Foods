@@ -1,4 +1,13 @@
-// ------------icons animation start--------------
+// ------------ Menu animation ------------
+
+document.querySelector(".menu").addEventListener("click", () => {
+  document.querySelectorAll(".target").forEach((item) => {
+    item.classList.toggle("change");
+  });
+});
+// ------------ End of Menu animation ------------
+
+// ------------ Icons animation start--------------
 
 const icons = document.querySelectorAll(".section-1-icons i");
 
@@ -20,4 +29,4 @@ setInterval(() => {
     icon.nextElementSibling.classList.add("change");
   }
 }, 4000);
-// ------------icons animation end--------------
+// ------------End of Icons animation --------------
